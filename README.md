@@ -44,9 +44,9 @@ Your GitHub Classroom repository will be shared automatically with the instructo
 Grading criteria
 Total 6 points:
 
-0.5 add missing case classes
-1 completion of boundingBox function
-0.5 shape constructor validity checking with suitable tests
+0.5 add missing case classes X
+1 completion of boundingBox function X
+0.5 shape constructor validity checking with suitable tests X
 0.5 size function
 0.5 height function
 0.5 scale function
