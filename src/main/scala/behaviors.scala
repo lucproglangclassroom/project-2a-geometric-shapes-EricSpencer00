@@ -8,7 +8,8 @@ object Behaviors:
     case Rectangle(_, _) => 1
     case Ellipse(_, _)   => 1
     case Location(_, _, sh) => size(sh)
-    case Group(shapes @ _*) => shapes.map(size).sum
+    case Group(shapes @ _*) =>
+      shapes.foldLeft(0)((acc, sh) => acc + size(sh))
 
   // height of shape tree: leaf = 1, Location/Group add 1
   def height(s: Shape): Int = s match
